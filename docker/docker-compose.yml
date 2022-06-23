@@ -4,10 +4,9 @@ services:
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
-    container_name: d_python3.10
     image: python:3.10
     volumes:
       - '../:/var/www/html'
-    container_name: python
+    container_name: python3.10
     tty: true
     working_dir: '/var/www/html'
